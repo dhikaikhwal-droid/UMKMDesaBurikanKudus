@@ -15,7 +15,7 @@ const umkmData = {
     products: [
         // Category 1 - Faizah Rosa Ecoprint
         { id: 1, category_id: 1, name: 'Sandal Ecoprint', description: 'Sandal dengan motif ecoprint handmade yang unik dan artistik. Nyaman dipakai sehari-hari.', image: 'Sandal.jpeg', whatsapp: '6287859221157' },
-        { id: 2, category_id: 1, name: 'Sepatu Heels Ecoprint', description: 'Sepatu heels dengan desain ecoprint eksklusif. Cocok untuk acara formal dan casual.', image: 'Topi Ecoprint.jpeg', whatsapp: '6287859221157' },
+        { id: 2, category_id: 1, name: 'Topi Ecoprint', description: 'Sepatu heels dengan desain ecoprint eksklusif. Cocok untuk acara formal dan casual.', image: 'Topi Ecoprint.jpeg', whatsapp: '6287859221157' },
         { id: 3, category_id: 1, name: 'Tas Ecoprint', description: 'Tas handmade dengan motif ecoprint yang elegan. Ukuran besar, muat banyak barang.', image: 'Tas Ecoprint.jpeg', whatsapp: '6287859221157' },
         { id: 4, category_id: 1, name: 'Mug Ecoprint', description: 'Mug keramik dengan motif ecoprint yang cantik. Cocok untuk hadiah atau koleksi pribadi.', image: 'Mug.jpeg', whatsapp: '6287859221157' },
         { id: 5, category_id: 1, name: 'Kemeja Ecoprint', description: 'Kemeja dengan motif ecoprint yang unik.', image: 'Kemeja.jpeg', whatsapp: '6287859221157' },

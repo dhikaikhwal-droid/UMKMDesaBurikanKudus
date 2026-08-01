@@ -7,10 +7,9 @@ const umkmData = {
         { id: 5, name: 'Bakso & Mie Ayam Sugeng Rawuh', icon: 'fa-bowl-rice' },
         { id: 6, name: 'Martabak Bang Dion', icon: 'fa-circle-dot' },
         { id: 7, name: 'Kerupuk Pak Sony', icon: 'fa-bag-shopping' },
-        { id: 8, name: 'Aqila Donut', icon: 'fa-ring' },
-        { id: 9, name: 'Susu Kedelai Bu Kati', icon: 'fa-mug-hot' },
-        { id: 10, name: 'Rajut Bu Ratih', icon: 'fa-scissors' },
-        { id: 11, name: 'Snack Choiriyah', icon: 'fa-cookie-bite' }
+        { id: 8, name: 'Susu Kedelai Bu Kati', icon: 'fa-mug-hot' },
+        { id: 9, name: 'Rajut Bu Ratih', icon: 'fa-scissors' },
+        { id: 10, name: 'Snack Choiriyah', icon: 'fa-cookie-bite' }
     ],
     products: [
         // Category 1 - Faizah Rosa Ecoprint
@@ -55,27 +54,22 @@ const umkmData = {
         { id: 26, category_id: 7, name: 'Keripik Seblak', description: 'Keripik dengan bumbu seblak kencur yang pedas.', image: 'kerupuk seblak.png', whatsapp: '6285790311641' },
         { id: 27, category_id: 7, name: 'Keripik Kerapu', description: 'Keripik ikan kerapu yang renyah dan gurih.', image: 'kerupuk ikan kerapu.png', whatsapp: '6285790311641' },
         
-        // Category 8 - Donut
-        { id: 28, category_id: 8, name: 'Donat', description: 'Donat lembut dengan berbagai topping menarik.', image: 'donat meses.png', whatsapp: '6285640191507' },
-        { id: 29, category_id: 8, name: 'Roti Goreng', description: 'Roti goreng renyah di luar, lembut di dalam.', image: 'roti pisang.png', whatsapp: '6285640191507' },
-        { id: 30, category_id: 8, name: 'Pizza Mini', description: 'Pizza mini dengan topping lengkap.', image: 'kue lapis.png', whatsapp: '6285640191507' },
+        // Category 8 - Susu Kedelai
+        { id: 28, category_id: 9, name: 'Susu Kedelai Original', description: 'Susu kedelai murni tanpa pemanis buatan.', image: 'Susu Kedelai Original.png', whatsapp: '6285727297792' },
+        { id: 29, category_id: 9, name: 'Susu Kedelai Strawberry', description: 'Susu kedelai dengan rasa strawberry yang segar.', image: 'Susu Kedelai Strawberry.png', whatsapp: '6285727297792' },
+        { id: 30, category_id: 9, name: 'Susu Kedelai Chocolate', description: 'Susu kedelai dengan rasa coklat yang creamy.', image: 'Susu Kedelai Cokelat.png', whatsapp: '6285727297792' },
         
-        // Category 9 - Susu Kedelai
-        { id: 31, category_id: 9, name: 'Susu Kedelai Original', description: 'Susu kedelai murni tanpa pemanis buatan.', image: 'Susu Kedelai Original.png', whatsapp: '6285727297792' },
-        { id: 32, category_id: 9, name: 'Susu Kedelai Strawberry', description: 'Susu kedelai dengan rasa strawberry yang segar.', image: 'Susu Kedelai Strawberry.png', whatsapp: '6285727297792' },
-        { id: 33, category_id: 9, name: 'Susu Kedelai Chocolate', description: 'Susu kedelai dengan rasa coklat yang creamy.', image: 'Susu Kedelai Cokelat.png', whatsapp: '6285727297792' },
-        
-        // Category 10 - Rajut Bu Ratih
-        { id: 35, category_id: 10, name: 'Tas Rajut', description: 'Tas rajut handmade Bu Ratih dengan desain unik.', image: 'tas rajut.png', whatsapp: '6285712345678' },
-        { id: 36, category_id: 10, name: 'Topi Rajut', description: 'Topi rajut lembut dan hangat buatan Bu Ratih.', image: 'keychain rajut (1).png', whatsapp: '6285712345678' },
-        { id: 37, category_id: 10, name: 'Dompet Rajut', description: 'Dompet rajut kecil yang lucu dan praktis.', image: 'Dompet Rajut.png', whatsapp: '6285712345678' },
-        { id: 38, category_id: 10, name: 'Bunga Rajut', description: 'Bunga rajut hiasan yang tidak akan layu.', image: 'keychain rajut.png', whatsapp: '6285712345678' },
+        // Category 9 - Rajut Bu Ratih
+        { id: 31, category_id: 10, name: 'Tas Rajut', description: 'Tas rajut handmade Bu Ratih dengan desain unik.', image: 'tas rajut.png', whatsapp: '6285712345678' },
+        { id: 32, category_id: 10, name: 'Topi Rajut', description: 'Topi rajut lembut dan hangat buatan Bu Ratih.', image: 'keychain rajut (1).png', whatsapp: '6285712345678' },
+        { id: 33, category_id: 10, name: 'Dompet Rajut', description: 'Dompet rajut kecil yang lucu dan praktis.', image: 'Dompet Rajut.png', whatsapp: '6285712345678' },
+        { id: 34, category_id: 10, name: 'Bunga Rajut', description: 'Bunga rajut hiasan yang tidak akan layu.', image: 'keychain rajut.png', whatsapp: '6285712345678' },
 
-        // Category 11 - Snack Choiriyah
-        { id: 39, category_id: 11, name: 'Roti Pisang', description: 'Roti pisang lembut dengan isian pisang asli yang manis dan gurih.', image: 'roti pisang.png', whatsapp: '6285876434103' },
-        { id: 40, category_id: 11, name: 'Risoles', description: 'Risoles renyah dengan isian ragout ayam dan sayuran yang lezat.', image: 'risoles.png', whatsapp: '6285876434103' },
-        { id: 41, category_id: 11, name: 'Kue Lapis', description: 'Kue lapis tradisional dengan lapisan warna-warni yang lembut dan manis.', image: 'kue lapis.png', whatsapp: '6285876434103' },
-        { id: 42, category_id: 11, name: 'Donat Meses', description: 'Donat lembut dengan topping meses coklat yang manis dan menggoda.', image: 'donat meses.png', whatsapp: '6285876434103' },
-        { id: 43, category_id: 11, name: 'Bolu Gulung', description: 'Bolu gulung dengan berbagai varian rasa yang lembut dan creamy.', image: 'bolu gulung.png', whatsapp: '6285876434103' }
+        // Category 10 - Snack Choiriyah
+        { id: 35, category_id: 11, name: 'Roti Pisang', description: 'Roti pisang lembut dengan isian pisang asli yang manis dan gurih.', image: 'roti pisang.png', whatsapp: '6285876434103' },
+        { id: 36, category_id: 11, name: 'Risoles', description: 'Risoles renyah dengan isian ragout ayam dan sayuran yang lezat.', image: 'risoles.png', whatsapp: '6285876434103' },
+        { id: 37, category_id: 11, name: 'Kue Lapis', description: 'Kue lapis tradisional dengan lapisan warna-warni yang lembut dan manis.', image: 'kue lapis.png', whatsapp: '6285876434103' },
+        { id: 38, category_id: 11, name: 'Donat Meses', description: 'Donat lembut dengan topping meses coklat yang manis dan menggoda.', image: 'donat meses.png', whatsapp: '6285876434103' },
+        { id: 39, category_id: 11, name: 'Bolu Gulung', description: 'Bolu gulung dengan berbagai varian rasa yang lembut dan creamy.', image: 'bolu gulung.png', whatsapp: '6285876434103' }
     ]
 };

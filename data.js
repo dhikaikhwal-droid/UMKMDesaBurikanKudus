@@ -25,7 +25,7 @@ const umkmData = {
         // Category 2 - Jajan Sadis
         { id: 6, category_id: 2, name: 'Macaroni Sadis', description: 'Macaroni dengan bumbu pedas yang menggigit. Bikin ketagihan!', image: 'macaroni sadis.png', whatsapp: '6285727745411' },
         { id: 7, category_id: 2, name: 'Cemilan Sadis', description: 'Aneka cemilan pedas dengan level kepedasan yang bisa disesuaikan.', image: 'kerupuk makaroni.png', whatsapp: '6285727745411' },
-        { id: 8, category_id: 2, name: 'Baso Aci Sadis', description: 'Baso aci instan dengan rasa pedas yang nendang.', image:, whatsapp: '6285727745411' },
+        { id: 8, category_id: 2, name: 'Baso Aci Sadis', description: 'Baso aci instan dengan rasa pedas yang nendang.', whatsapp: '6285727745411' },
         { id: 9, category_id: 2, name: 'Mie Lidi', description: 'Mie lidi dengan pilihan rasa pedas atau original.', image: 'kerupuk seblak.png', whatsapp: '6285727745411' },
         { id: 10, category_id: 2, name: 'Kerupuk Pedas', description: 'Kerupuk dengan bumbu pedas yang khas.', image: 'kerupuk makaroni.png', whatsapp: '6285727745411' },
         

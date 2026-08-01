@@ -10,7 +10,9 @@ const umkmData = {
         { id: 7, name: 'Kerupuk Pak Sony', icon: 'fa-bag-shopping' },
         { id: 8, name: 'Aqila Donut', icon: 'fa-ring' },
         { id: 9, name: 'Susu Kedelai Bu Kati', icon: 'fa-mug-hot' },
-        { id: 10, name: 'Rajut Bu Ratih', icon: 'fa-scissors' }
+        { id: 10, name: 'Rajut Bu Ratih', icon: 'fa-scissors' },
+        // ✅ BARU: Snack Choiriyah
+        { id: 11, name: 'Snack Choiriyah', icon: 'fa-cookie-bite' }
     ],
     products: [
         // Category 1 - Faizah Rosa Ecoprint
@@ -68,6 +70,13 @@ const umkmData = {
         { id: 35, category_id: 10, name: 'Tas Rajut', description: 'Tas rajut handmade Bu Ratih dengan desain unik.', image: 'tas rajut.png', whatsapp: '6285712345678' },
         { id: 36, category_id: 10, name: 'Topi Rajut', description: 'Topi rajut lembut dan hangat buatan Bu Ratih.', image: 'keychain rajut (1).png', whatsapp: '6285712345678' },
         { id: 37, category_id: 10, name: 'Dompet Rajut', description: 'Dompet rajut kecil yang lucu dan praktis.', image: 'Dompet Rajut.png', whatsapp: '6285712345678' },
-        { id: 38, category_id: 10, name: 'Bunga Rajut', description: 'Bunga rajut hiasan yang tidak akan layu.', image: 'keychain rajut.png', whatsapp: '6285712345678' }
+        { id: 38, category_id: 10, name: 'Bunga Rajut', description: 'Bunga rajut hiasan yang tidak akan layu.', image: 'keychain rajut.png', whatsapp: '6285712345678' },
+
+        // ✅ BARU: Category 11 - Snack Choiriyah
+        { id: 39, category_id: 11, name: 'Roti Pisang', description: 'Roti pisang lembut dengan isian pisang asli yang manis dan gurih.', image: 'roti pisang.png', whatsapp: '6285876434103' },
+        { id: 40, category_id: 11, name: 'Risoles', description: 'Risoles renyah dengan isian ragout ayam dan sayuran yang lezat.', image: 'risoles.png', whatsapp: '6285876434103' },
+        { id: 41, category_id: 11, name: 'Kue Lapis', description: 'Kue lapis tradisional dengan lapisan warna-warni yang lembut dan manis.', image: 'kue lapis.png', whatsapp: '6285876434103' },
+        { id: 42, category_id: 11, name: 'Donat Meses', description: 'Donat lembut dengan topping meses coklat yang manis dan menggoda.', image: 'donat meses.png', whatsapp: '6285876434103' },
+        { id: 43, category_id: 11, name: 'Bolu Gulung', description: 'Bolu gulung dengan berbagai varian rasa yang lembut dan creamy.', image: 'bolu gulung.png', whatsapp: '6285876434103' }
     ]
 };

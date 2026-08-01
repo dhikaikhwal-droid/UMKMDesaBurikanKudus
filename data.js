@@ -21,11 +21,12 @@ const umkmData = {
         { id: 5, category_id: 1, name: 'Kemeja Ecoprint', description: 'Kemeja dengan motif ecoprint yang unik.', image: 'Kemeja.jpeg', whatsapp: '6287859221157' },
         
         // Category 2 - Jajan Sadis
+        // Category 2 - Jajan Sadis (TANPA GAMBAR untuk Baso Aci & Kerupuk Pedas)
         { id: 6, category_id: 2, name: 'Macaroni Sadis', description: 'Macaroni dengan bumbu pedas yang menggigit. Bikin ketagihan!', image: 'macaroni sadis.png', whatsapp: '6285727745411' },
         { id: 7, category_id: 2, name: 'Cemilan Sadis', description: 'Aneka cemilan pedas dengan level kepedasan yang bisa disesuaikan.', image: 'kerupuk makaroni.png', whatsapp: '6285727745411' },
-        { id: 8, category_id: 2, name: 'Baso Aci Sadis', description: 'Baso aci instan dengan rasa pedas yang nendang.', image: '', whatsapp: '6285727745411' },
+        { id: 8, category_id: 2, name: 'Baso Aci Sadis', description: 'Baso aci instan dengan rasa pedas yang nendang.', image: null, whatsapp: '6285727745411' },
         { id: 9, category_id: 2, name: 'Mie Lidi', description: 'Mie lidi dengan pilihan rasa pedas atau original.', image: 'kerupuk seblak.png', whatsapp: '6285727745411' },
-        { id: 10, category_id: 2, name: 'Kerupuk Pedas', description: 'Kerupuk dengan bumbu pedas yang khas.', image: '', whatsapp: '6285727745411' },
+        { id: 10, category_id: 2, name: 'Kerupuk Pedas', description: 'Kerupuk dengan bumbu pedas yang khas.', image: null, whatsapp: '6285727745411' },
         
         // Category 3 - Kerupuk ABC
         { id: 11, category_id: 3, name: 'Kerupuk Asmara', description: 'Kerupuk ikan kerapu yang renyah dan gurih.', image: 'kerupuk ikan kerapu.png', whatsapp: '6285225266270' },

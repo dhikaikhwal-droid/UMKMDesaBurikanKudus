@@ -80,50 +80,8 @@ function loadProducts() {
     // Filter produk berdasarkan kategori
     const products = umkmData.products.filter(p => p.category_id === categoryId);
 
-    // Mapping nama produk ke file gambar
-    const imageMapping = {
-        'Sandal Ecoprint': 'Sandal.jpeg',
-        'Sepatu Heels Ecoprint': 'Topi Ecoprint.jpeg',
-        'Tas Ecoprint': 'Tas Ecoprint.jpeg',
-        'Mug Ecoprint': 'Mug.jpeg',
-        'Kemeja Ecoprint': 'Kemeja.jpeg',
-        'Macaroni Sadis': 'macaroni sadis.png',
-        'Cemilan Sadis': 'kerupuk makaroni.png',
-        'Baso Aci Sadis': 'bolu gulung.png',
-        'Mie Lidi': 'kerupuk seblak.png',
-        'Kerupuk Pedas': 'kerupuk makaroni.png',
-        'Kerupuk Asmara': 'kerupuk ikan kerapu.png',
-        'Kerupuk Bawang': 'Kerupuk Bawang.png',
-        'Kerupuk Putih': 'Kerupuk Putih.png',
-        'Soto Ayam': 'Soto Ayam.png',
-        'Sate Puyuh': 'Sate Telur Puyuh.png',
-        'Perkedel': 'Perkedel.jpg',
-        'Tempe Goreng': 'Gorengan.png',
-        'Mendoan': 'Mendoan.png',
-        'Bakso Bungkam Janda': 'Bakso Bungkam Janda.png',
-        'Telur Puyuh': 'Telur Puyuh.jpg',
-        'Mie Ayam Tetelan': 'Bakso tetelan.png',
-        'Mie Ayam Bakso': 'Bakso tetelan.png',
-        'Gorengan': 'Gorengan.png',
-        'Kue Bandung': 'kue bandung original.png',
-        'Martabak Telor': 'martabak telur ayam.png',
-        'Keripik Seblak': 'kerupuk seblak.png',
-        'Keripik Kerapu': 'kerupuk ikan kerapu.png',
-        'Donat': 'donat meses.png',
-        'Roti Goreng': 'roti pisang.png',
-        'Pizza Mini': 'kue lapis.png',
-        'Susu Kedelai Original': 'Susu Kedelai Original.png',
-        'Susu Kedelai Strawberry': 'Susu Kedelai Strawberry.png',
-        'Susu Kedelai Chocolate': 'Susu Kedelai Cokelat.png',
-        'Tas Rajut': 'tas rajut.png',
-        'Topi Rajut': 'keychain rajut (1).png',
-        'Dompet Rajut': 'Dompet Rajut.png',
-        'Bunga Rajut': 'keychain rajut.png'
-    };
-
     products.forEach((product, index) => {
-        const imageName = imageMapping[product.name] || product.image;
-        const imagePath = imageName; // Gambar ada di folder yang sama
+        const imagePath = product.image;
         
         const productHTML = `
             <div class="col-md-6 col-lg-4">
@@ -131,7 +89,7 @@ function loadProducts() {
                     <div class="product-image-container">
                         <img src="${imagePath}" 
                              alt="${product.name}"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'no-image\'><i class=\'fas ${category.icon}\'></i><span>${product.name}</span></div>'"
+                             onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'no-image\'><i class=\'fas ${category.icon}\'></i><span>${product.name}</span></div>' + this.parentElement.innerHTML"
                              style="width: 100%; height: 100%; object-fit: cover;">
                         
                         <span class="product-badge">

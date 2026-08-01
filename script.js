@@ -5,17 +5,19 @@ function loadCategories() {
     const categoryList = document.getElementById('categoryList');
     if (!categoryList) return;
 
+    // Ditambahkan 1 gradient lagi untuk kategori ke-11 (Snack Choiriyah)
     const gradients = [
-        'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-        'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-        'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-        'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-        'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-        'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)',
-        'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
-        'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)',
-        'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)'
+        'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', // 1. Ecoprint
+        'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', // 2. Jajan Sadis
+        'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)', // 3. Kerupuk ABC
+        'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)', // 4. Soto Ayam
+        'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', // 5. Bakso
+        'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)', // 6. Martabak
+        'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)', // 7. Kerupuk Pak Sony
+        'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)', // 8. Aqila Donut
+        'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)', // 9. Susu Kedelai
+        'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)', // 10. Rajut Bu Ratih
+        'linear-gradient(135deg, #f6d365 0%, #fda085 100%)'  // 11. Snack Choiriyah (Warm Orange/Yellow)
     ];
 
     umkmData.categories.forEach((category, index) => {

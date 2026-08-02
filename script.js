@@ -1,23 +1,19 @@
-// script.js - Logika untuk menampilkan data
-
 // Fungsi untuk memuat kategori di halaman utama
 function loadCategories() {
     const categoryList = document.getElementById('categoryList');
     if (!categoryList) return;
 
-    // Ditambahkan 1 gradient lagi untuk kategori ke-11 (Snack Choiriyah)
     const gradients = [
-        'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', // 1. Ecoprint
-        'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', // 2. Jajan Sadis
-        'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)', // 3. Kerupuk ABC
-        'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)', // 4. Soto Ayam
-        'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', // 5. Bakso
-        'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)', // 6. Martabak
-        'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)', // 7. Kerupuk Pak Sony
-        'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)', // 8. Aqila Donut
-        'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)', // 9. Susu Kedelai
-        'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)', // 10. Rajut Bu Ratih
-        'linear-gradient(135deg, #f6d365 0%, #fda085 100%)'  // 11. Snack Choiriyah (Warm Orange/Yellow)
+        'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+        'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+        'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+        'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+        'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+        'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)',
+        'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+        'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)',
+        'linear-gradient(135deg, #f6d365 0%, #fda085 100%)'
     ];
 
     umkmData.categories.forEach((category, index) => {
@@ -59,7 +55,6 @@ function loadProducts() {
     
     if (!productList) return;
 
-    // Ambil ID kategori dari URL
     const urlParams = new URLSearchParams(window.location.search);
     const categoryId = parseInt(urlParams.get('id'));
     
@@ -68,32 +63,34 @@ function loadProducts() {
         return;
     }
 
-    // Cari kategori
     const category = umkmData.categories.find(c => c.id === categoryId);
     if (!category) {
         window.location.href = 'index.html';
         return;
     }
 
-    // Update judul
     categoryTitle.innerHTML = `<i class="fas ${category.icon} me-3"></i>${category.name}`;
     categorySubtitle.textContent = `Daftar menu ${category.name} terbaik dan terlaris`;
 
-    // Filter produk berdasarkan kategori
     const products = umkmData.products.filter(p => p.category_id === categoryId);
 
     products.forEach((product, index) => {
-        const imagePath = product.image;
+        // PERBAIKAN PENTING: Cek apakah image benar-benar ada, bukan 'null', dan bukan string kosong
+        const hasImage = product.image && product.image !== 'null' && product.image.trim() !== '';
+        
+        let imageHTML = '';
+        if (hasImage) {
+            imageHTML = `<img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">`;
+        } else {
+            // Jika null atau kosong, tampilkan ikon dan nama menu, BUKAN gambar
+            imageHTML = `<div class="no-image"><i class="fas ${category.icon}"></i><span>${product.name}</span></div>`;
+        }
         
         const productHTML = `
             <div class="col-md-6 col-lg-4">
                 <div class="product-card" style="animation-delay: ${index * 0.1}s">
                     <div class="product-image-container">
-                        <img src="${imagePath}" 
-                             alt="${product.name}"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'no-image\'><i class=\'fas ${category.icon}\'></i><span>${product.name}</span></div>' + this.parentElement.innerHTML"
-                             style="width: 100%; height: 100%; object-fit: cover;">
-                        
+                        ${imageHTML}
                         <span class="product-badge">
                             <i class="fas fa-star"></i>Best Seller
                         </span>
